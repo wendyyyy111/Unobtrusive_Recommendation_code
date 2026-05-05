@@ -1,20 +1,22 @@
 # src/catalog.py
 from typing import Dict
 
+
 item_catalog = [
-    {"id": 0, "name": "娱乐内容",             "sensitivity": 0.1, "category": "A"},
-    {"id": 1, "name": "轻度健康建议",         "sensitivity": 0.3, "category": "B"},
-    {"id": 2, "name": "睡眠/作息建议",        "sensitivity": 0.5, "category": "B"},
-    {"id": 3, "name": "压力缓解练习",         "sensitivity": 0.7, "category": "C"},
-    {"id": 4, "name": "心理健康自测/资讯",     "sensitivity": 0.9, "category": "C"},
-    {"id": 5, "name": "直接指出焦虑的干预卡", "sensitivity": 1.0, "category": "D"},
-    {"id": 6, "name": "工作/学习效率建议",     "sensitivity": 0.6, "category": "B"},
-    {"id": 7, "name": "正念/呼吸冥想课程",     "sensitivity": 0.7, "category": "C"},
-    {"id": 8, "name": "社交/家人互动建议",     "sensitivity": 0.4, "category": "B"},
-    {"id": 9, "name": "体育/运动建议",         "sensitivity": 0.4, "category": "B"},
-    {"id": 10, "name": "新闻/资讯类内容",      "sensitivity": 0.2, "category": "A"},
-    {"id": 11, "name": "兴趣培养/爱好课程",    "sensitivity": 0.2, "category": "A"},
+    {"id": 0, "name": "Entertainment Content", "sensitivity": 0.1, "category": "A"},
+    {"id": 1, "name": "Mild Health Advice", "sensitivity": 0.3, "category": "B"},
+    {"id": 2, "name": "Sleep / Schedule Advice", "sensitivity": 0.5, "category": "B"},
+    {"id": 3, "name": "Stress Relief Exercises", "sensitivity": 0.7, "category": "C"},
+    {"id": 4, "name": "Mental Health Self-Assessment / Information", "sensitivity": 0.9, "category": "C"},
+    {"id": 5, "name": "Anxiety Intervention Card (Direct Identification)", "sensitivity": 1.0, "category": "D"},
+    {"id": 6, "name": "Work / Study Efficiency Advice", "sensitivity": 0.6, "category": "B"},
+    {"id": 7, "name": "Mindfulness / Breathing Meditation Courses", "sensitivity": 0.7, "category": "C"},
+    {"id": 8, "name": "Social / Family Interaction Advice", "sensitivity": 0.4, "category": "B"},
+    {"id": 9, "name": "Physical Fitness / Exercise Advice", "sensitivity": 0.4, "category": "B"},
+    {"id": 10, "name": "News / Information Content", "sensitivity": 0.2, "category": "A"},
+    {"id": 11, "name": "Hobby Development Courses", "sensitivity": 0.2, "category": "A"},
 ]
+```
 
 
 def rel_score(state: int, item_id: int) -> float:
